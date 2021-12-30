@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  backend:
+    build: .
+    ports:
+      - 2233:80
+      - 2234:443
+    volumes: 
+      - data:/app/videos
+volumes: 
+  data:
